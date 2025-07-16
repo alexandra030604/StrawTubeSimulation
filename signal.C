@@ -117,7 +117,7 @@ int main(int argc, char * argv[]) {
   DriftLineRKF drift;
 
 drift.SetSensor(&sensor); // Assigns the sensor
-drift.SetGainFluctuationsPolya(1, 57000, true); // Polya model for gain fluctuations (actually, not 57k, but 48k. why this happens is a mystery)
+drift.SetGainFluctuationsPolya(1, 57000, true); // Polya model for gain fluctuations (actually, not 57k, but 48k)
 drift.EnableIonTail(); // Enables ion tail simulation (slow ions drifting to cathode)
 drift.EnableSignalCalculation(); // Enables signal induction calculation
   TCanvas* cD = nullptr;
