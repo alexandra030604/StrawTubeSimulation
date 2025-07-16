@@ -166,7 +166,7 @@ in each cluster.
 ```cpp
 DriftLineRKF drift;
 drift.SetSensor(&sensor);
-drift.SetGainFluctuationsPolya(1, 57000, true); // Polya distribution (actually, not 57k, but 48k. why this happens is a mystery)
+drift.SetGainFluctuationsPolya(1, 57000, true); // Polya distribution (actually, not 57k, but 48k)
 drift.EnableIonTail(); // Ion drift simulation
 ```
 Gas gain refers to the charge multiplication factor in gaseous detectors, achieved through electron avalanche processes in strong electric fields.
