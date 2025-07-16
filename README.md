@@ -17,7 +17,8 @@ Post-processing
 6. GetAll90Percents.cpp
 7. Energy_dep.cpp
 
-# generate.C for gas file
+# Main generation:
+# 1. generate.C for gas file
 This code generates a file '.gas` with transport parameters **of charged particles** for the Ar/CO₂ gas mixture (70%/30%) in electromagnetic fields.
 ## 1. Gas Mixture Setup
 ```cpp
