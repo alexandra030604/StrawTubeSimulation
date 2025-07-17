@@ -27,4 +27,10 @@ Was used to draw a set of Garfield++ and Geant4 histograms of energy loss distri
 6. GetAll90Percents.cpp
 Gets 50% percentiles from Garfield++ dE histograms
 7. Energy_dep.cpp
-This script was used for comparison of energy loss, number of created electrons and number of total electrons after an avalanch
+This script was used for comparison of energy loss, number of created electrons and number of total electrons after an avalanche
+
+LTSpice simulation
+1. Needed two files -- prepare_sigs.py and batch_new.py
+2. prepare_sigs.py prepares Garfield++ signals for LTSpice processing, adds 50 ns to all time values
+3. batch_new.py does generation of prepared signals.
+4. template_asc_filename = "PNPI_sim_25ns_G3.asc" (line #17 in batch_new.py) is responsible for model name 
