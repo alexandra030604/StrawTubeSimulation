@@ -19,7 +19,7 @@ This code also estimates left content (noise) percentage and writes it into term
 2. total_charge_2d_hist.cpp
 Draws 2D charge-amplitude plot. Requires ROOT file after garfield++ simulation and set of signals after LTSpice. Also returns two projections also known as charge and amplitude. Part for trimmed mean evaluation is included.
 3. draw_before_spice.cpp
-Draw three signals before LTSpice processing as reference. Also may be used for drawing singals after LTSpice
+Draw three signals before LTSpice processing as reference
 4. PlotSignal.cpp
 Upgraded version of previous script. Integrates signal from every single file and plots distribution.  
 5. Geant4GarfieldCompare.cpp
