@@ -4,17 +4,20 @@ void draw_before_spice(){
   TString all_file = "straw_1atm_2mm_gamma_iron_test_garf_bin2000_4721.sig";
   TString elec_file = "straw_1atm_2mm_gamma_iron_test_garf_bin2000_4722.sig";
   TString ion_file = "straw_1atm_2mm_gamma_iron_test_garf_bin2000_4723.sig";
-
+// before spice:
   TGraph * grapf_all_file;
-  grapf_all_file = new TGraph(all_file, "%lg %lg", "");
+  grapf_all_file = new TGraph(all_file, "%lg %lg", ""); 
 
   TGraph * grapf_elec_file;
   grapf_elec_file = new TGraph(elec_file, "%lg %lg", "");
 
   TGraph * grapf_ion_file;
   grapf_ion_file = new TGraph(ion_file, "%lg %lg", "");
-
-  TCanvas * c1 = new TCanvas("c1","c1", 1600, 800);
+// after spice: 
+  /* TGraph *grapf_all_file = new TGraph(all_file, "%lg %*lg %lg", "");
+  TGraph *grapf_elec_file = new TGraph(elec_file, "%lg %*lg %lg", "");
+  TGraph *grapf_ion_file = new TGraph(ion_file, "%lg %*lg %lg", ""); */
+  TCanvas * c1 = new TCanvas("c1","c1", 1600, 800); 
   c1 -> SetGrid();
   gStyle -> SetOptStat(0);
   grapf_all_file -> SetTitle(" Signal before LTSpice plots, gamma, Fe-55, angle 90 degs; [s]; [A]");
